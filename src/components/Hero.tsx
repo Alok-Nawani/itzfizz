@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import blackCarImg from "../../public/black-car.png";
 
 export default function Hero() {
     const containerRef = useRef<HTMLElement>(null);
@@ -116,7 +117,7 @@ export default function Hero() {
                     style={{ width: "min(35vw, 600px)" }} // Responsive car sizing
                 >
                     <Image
-                        src="/black-car.png"
+                        src={blackCarImg}
                         alt="Black Sports Car"
                         width={1000}
                         height={600}
